@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-screen">
+    <div class="grid justify-items-center ">
+        <h1 class="text-3xl font-bold text-emerald-800 underline mb-4">My <span class="text-orange-800 underline">Calculator</span></h1>
+
+        <div class="bg-black grid sm:grid-cols-4 grid-cols-4  sm:grid-rows-6 justify-items-center mt-10 sm:h-[8rem] sm:w-4/12">
+
+            <input id="result-text" type="text" value="" placeholder="0" class="col-span-4 bg-black text-3xl   ms:pb-5 mt-10 w-11/12 sm:h-14  text-white italic font-bold">
+        </div>
+            <div class="bg-gray-400 grid sm:grid-cols-4 grid-cols-4  sm:grid-rows-6 justify-items-center  sm:h-[31rem]  ms:pb-5 sm:w-4/12">
+            
+                <button onclick="clr()" class="ac-btn bg-teal-300 hover:bg-sky-500  focus:text-white sm:h-[6rem] sm:w-[292px] w-20 text-2xl font-medium">AC</button>
+                <div></div>
+
+                <button onclick="del()" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[160px] focus:text-red-800   text-2xl font-medium">DEL</button>
+                
+                <button onclick="calculate('/')" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem]  focus:text-red-800 ml-2 text-2xl font-medium">÷</button>
+
+                <button onclick="calculate(1)" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mt-4 mr-2  focus:text-red-800  text-2xl font-medium">1</button>
+
+                <button onclick="calculate(2)" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mt-4 mr-4  focus:text-red-800  text-2xl font-medium">2</button>
+
+                <button onclick="calculate(3)" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[160px] mt-4  focus:text-red-800  text-2xl font-medium">3</button>
+
+                <button onclick="calculate('*')" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mt-4  focus:text-red-800 ml-2 text-2xl font-medium">*</button>
+
+                <button onclick="calculate(4)" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mt-8 mr-2  focus:text-red-800  text-2xl font-medium">4</button>
+
+                <button onclick="calculate(5)" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mt-8 mr-4  focus:text-red-800  text-2xl font-medium">5</button>
+
+                <button onclick="calculate(6)" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[160px] mt-8  focus:text-white  text-2xl font-medium">6</button>
+
+                <button onclick="calculate('+')" class="bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mt-8  focus:text-red-800 ml-2 text-2xl font-medium">+</button>
+
+                <button onclick="calculate(7)" class="key-btn bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem]  mr-2  focus:text-red-800  text-2xl font-medium">7</button>
+
+                <button onclick="calculate(8)" class="key-btn bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem]  mr-4  focus:text-red-800  text-2xl font-medium">8</button>
+
+                <button onclick="calculate(9)" class="key-btn bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[160px]   focus:text-red-800 text-2xl font-medium">9</button>
+
+                <button onclick="calculate('-')" class="key-btn bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem]   focus:text-red-800 ml-2 text-2xl font-medium">-</button>
+
+                <button onclick="calculate('.')" class="key-btn-two bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mr-2  focus:text-red-800  text-2xl font-medium">.</button>
+
+                <button onclick="calculate(0)" class="key-btn-two bg-teal-300 hover:bg-sky-500 sm:h-[6rem] sm:w-[9rem] mr-4   focus:text-red-800 text-2xl font-medium">0</button>
+
+                <button onclick="finalResult()" class="result-btn bg-gradient-to-r from-indigo-600 to-cyan-400 focus:text-red-800 sm:h-[6rem] sm:w-[308px] w-20 text-2xl font-medium">=</button>
+                
+            </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
